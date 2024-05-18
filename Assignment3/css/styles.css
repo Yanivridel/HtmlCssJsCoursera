@@ -3,7 +3,7 @@ body {
   color: black;
   font-family: 'Oxygen', sans-serif;
   background-color: #FFFAE6;
-  box-sizing: border-box;
+/*  box-sizing: border-box;*/
 }
 
 /** HEADER **/
@@ -33,8 +33,13 @@ div#navbar-header{
   padding-top: 25px;
   padding-bottom: 45px;
 }
-div.navbar-header button{
-margin-top: 20px;
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 2px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -50px;
 }
 div#collapsable-nav{
   padding-left:0px;
@@ -74,7 +79,7 @@ div#main-content h2{
 div#main-content section{
   background-color: lightgray;
   border: 2px solid black;
-  margin: 5px 5px 0px 5px;
+  margin: 5px 5px 5px 5px;
 }
 section h2{
   font-size: 1.3em;
@@ -83,10 +88,9 @@ section h2{
 }
 section a{
   text-decoration: none;
-  width: 15%;
-  color:red;
+  width: 25%;
 }
-section a:visited, section a:hover {
+section a:visited, section a:hover, section a:link {
   text-decoration: none;
   color: rebeccapurple;
   }
@@ -98,24 +102,24 @@ section a:visited, section a:hover {
 
 
 
-/*MED+LARGE ONLY - */
+  /*MED+LARGE ONLY - */
 @media (min-width: 992px) {
   .col-lg-4, .col-md-4{
     width: calc(33.33% - 10px);
   }
 }
   /*SMALL ONLY - TABLETS*/
-  @media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 768px) and (max-width: 991px){
   .col-sm-6 {
     width: calc(50% - 10px);
   }
   .col-sm-12{
     width: calc(100% - 10px);
   }
+}
   /*EXTRA SMALL ONLY - PHONES*/
-  @media (max-width: 767px){
-  .col-sm-12{
+@media (max-width: 767px){
+  .col-xs-12{
     width: calc(100% - 10px);
   }
-  
 }
