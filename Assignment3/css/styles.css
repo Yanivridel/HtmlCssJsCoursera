@@ -1,0 +1,121 @@
+body {
+  font-size: 16px;
+  color: black;
+  font-family: 'Oxygen', sans-serif;
+  background-color: #FFFAE6;
+  box-sizing: border-box;
+}
+
+/** HEADER **/
+nav#header-nav {
+	background: lightblue;
+  border-radius: 0;
+  border: 2.5px solid black;
+}
+div#navbar-header{
+  padding: 10px;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand h1 {  /* Restuarnt Name */
+  font-family: 'Lora', serif;
+  color: #FF9F66;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand {
+  padding-top: 25px;
+  padding-bottom: 45px;
+}
+div.navbar-header button{
+margin-top: 20px;
+}
+div#collapsable-nav{
+  padding-left:0px;
+  padding-right: 0px;
+}
+ul#nav-list{
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 1px solid black;
+}
+ul#nav-list li.visible-xs{
+ border: 1px solid black;
+ font-size: 1.4em;
+}
+li.visible-xs a{
+  padding: 15px;
+}
+li.visible-xs span{
+ font-size: 1.2em;
+ color: darkred;
+}
+.glyphicon.glyphicon-leaf{
+color:limegreen;
+}
+.glyphicon.glyphicon-cutlery{
+  color:darkgoldenrod;
+}
+
+
+
+/** BODY **/
+div#main-content h2{
+  font-weight: bold;
+  text-shadow: 0.5px 0.5px 0.5px #222;
+  margin-top: -3px;
+}
+div#main-content section{
+  background-color: lightgray;
+  border: 2px solid black;
+  margin: 5px 5px 0px 5px;
+}
+section h2{
+  font-size: 1.3em;
+  padding-top: 10px;
+  margin-bottom: 8px;
+}
+section a{
+  text-decoration: none;
+  width: 15%;
+  color:red;
+}
+section a:visited, section a:hover {
+  text-decoration: none;
+  color: rebeccapurple;
+  }
+  section a:focus {
+  color:mediumpurple;
+  text-decoration: none;
+  }
+
+
+
+
+/*MED+LARGE ONLY - */
+@media (min-width: 992px) {
+  .col-lg-4, .col-md-4{
+    width: calc(33.33% - 10px);
+  }
+}
+  /*SMALL ONLY - TABLETS*/
+  @media (min-width: 768px) and (max-width: 991px){
+  .col-sm-6 {
+    width: calc(50% - 10px);
+  }
+  .col-sm-12{
+    width: calc(100% - 10px);
+  }
+  /*EXTRA SMALL ONLY - PHONES*/
+  @media (max-width: 767px){
+  .col-sm-12{
+    width: calc(100% - 10px);
+  }
+  
+}

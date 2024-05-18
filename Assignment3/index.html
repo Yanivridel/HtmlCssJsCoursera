@@ -4,16 +4,73 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>David Chu's China Bistro</title>
+    <title>Assignment3</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
 <body>
-  <header>
-    
+    <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Israeli Food</h1></a>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li class="visible-xs">
+              <a href="#section1" class="text-center"><span class="glyphicon glyphicon-cutlery"></span> Chicken</a>
+            </li>
+            <li class="visible-xs">
+              <a href="#section2" class="text-center"><span class="glyphicon glyphicon-fire"></span> Beef</a>
+            </li>
+            <li class="visible-xs">
+              <a href="#section3" class="text-center"><span class="glyphicon glyphicon-leaf"></span> Sushi</a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
   </header>
 
+  <!-- BODY -->
   
+   <div id="main-content" class="container">
+    <h2 id="menu-categories-title" class="text-center">Our Menu</h2>
+    <div class="row">
+        <section id="section1" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+      <h2 class="section_title one text-center">Chicken</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie at erat ultrices pellentesque. Quisque finibus, magna vitae convallis placerat, nibh sapien pulvinar est, eget lobortis velit erat in dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet libero eu eros varius imperdiet. Proin malesuada et nisi fermentum molestie. Aenean ac placerat enim, venenatis vehicula orci. Pellentesque porttitor leo et nisi vestibulum elementum vitae ac augue. Morbi eget purus neque. Sed ut nisl turpis. Donec et posuere erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce at fringilla sem. Maecenas congue mauris vel magna volutpat, quis faucibus eros ultricies.</p>
+      <a href="#header-nav" class="visible-xs">Back to top</a>
+    </section>
+    <section id="section2" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+      <h2 class="section_title two text-center">Beef</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie at erat ultrices pellentesque. Quisque finibus, magna vitae convallis placerat, nibh sapien pulvinar est, eget lobortis velit erat in dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet libero eu eros varius imperdiet. Proin malesuada et nisi fermentum molestie. Aenean ac placerat enim, venenatis vehicula orci. Pellentesque porttitor leo et nisi vestibulum elementum vitae ac augue. Morbi eget purus neque. Sed ut nisl turpis. Donec et posuere erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce at fringilla sem. Maecenas congue mauris vel magna volutpat, quis faucibus eros ultricies.</p>
+      <a href="#header-nav" class="visible-xs">Back to top</a>
+    </section>
+    <section id="section3" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <h2 class="section_title third text-center">Sushi</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie at erat ultrices pellentesque. Quisque finibus, magna vitae convallis placerat, nibh sapien pulvinar est, eget lobortis velit erat in dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet libero eu eros varius imperdiet. Proin malesuada et nisi fermentum molestie. Aenean ac placerat enim, venenatis vehicula orci. Pellentesque porttitor leo et nisi vestibulum elementum vitae ac augue. Morbi eget purus neque. Sed ut nisl turpis. Donec et posuere erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce at fringilla sem. Maecenas congue mauris vel magna volutpat, quis faucibus eros ultricies.</p>
+      <a href="#header-nav" class="visible-xs">Back to top</a>
+    </section>
+  </div>
+
+
+
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 </html>
